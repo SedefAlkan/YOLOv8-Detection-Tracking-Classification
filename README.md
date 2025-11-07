@@ -1,9 +1,8 @@
 # 🚗 GERÇEK ZAMANLI ARAÇ YOĞUNLUĞU ANALİZİ SİSTEMİ (YOLOv8 + ByteTrack)
 
-                     ![Demo](./output.gif)
-
-
-
+<p align="center">
+  <img src="./output.gif" alt="Demo" width="800"/>
+</p>
 ---
 
 ## 🎯 PROJENİN AMACI VE KONUSU
