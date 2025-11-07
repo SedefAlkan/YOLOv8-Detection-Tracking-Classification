@@ -21,7 +21,9 @@ Proje, görüntü işleme, nesne takibi, veri analizi ve görselleştirme kavram
 2. **ByteTrack algoritması**, tespit edilen araçlara benzersiz kimlik (ID) atayarak takip eder.  
 3. Her karedeki toplam araç sayısı ekrana yazılır.  
 4. Süre boyunca elde edilen araç sayısı değerleri kaydedilir ve **yoğunluk grafiği** oluşturulur.  
-5. İşlem tamamlandığında grafik gösterilir.  
+5. İşlem tamamlandığında grafik gösterilir.
+
+![Density Graph](./image.png)
 
 ---
 
@@ -82,7 +84,6 @@ python app.py
 - Ekranda anlık **araç sayısı** gösterilir.  
 - Araç tespitleri kare üzerine çizilir.  
 - İşlem tamamlanınca **yoğunluk grafiği** açılır.  
-![Density Graph](./image.png)
 
 ---
 
@@ -90,9 +91,7 @@ python app.py
 
 - 🚘 Gerçek zamanlı nesne tespiti ve takibi  
 - 🧮 Araç sınıflarının sayılması (yaya hariç)  
-- 📊 Zaman serisi tabanlı yoğunluk grafiği  
-- 🎥 Çıktı videosu ve otomatik demo GIF oluşturma  
-- 🖼️ Arka planı renkli sayaç yazısı (görünürlük için optimize)  
+- 📊 Zaman serisi tabanlı yoğunluk grafiği   
 - ⚙️ Tamamen modüler yapı (`src/` klasörü altında)  
 
 ---
