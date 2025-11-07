@@ -1,8 +1,8 @@
 # 🚗 GERÇEK ZAMANLI ARAÇ YOĞUNLUĞU ANALİZİ SİSTEMİ (YOLOv8 + ByteTrack)
 
-![Demo](./output.gif)
+                     ![Demo](./output.gif)
 
-![Density Graph](./image.png)
+
 
 ---
 
@@ -83,7 +83,7 @@ python app.py
 - Ekranda anlık **araç sayısı** gösterilir.  
 - Araç tespitleri kare üzerine çizilir.  
 - İşlem tamamlanınca **yoğunluk grafiği** açılır.  
-- İşlenen video `output/output_result.mp4` olarak kaydedilir.  
+![Density Graph](./image.png)
 
 ---
 
