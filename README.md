@@ -1,8 +1,8 @@
 # 🚗 GERÇEK ZAMANLI ARAÇ YOĞUNLUĞU ANALİZİ SİSTEMİ (YOLOv8 + ByteTrack)
 
-![Demo](output.gif)
+![Demo](./output.gif)
 
-![Density Graph](image.png)
+![Density Graph](./image.png)
 
 ---
 
@@ -22,7 +22,7 @@ Proje, görüntü işleme, nesne takibi, veri analizi ve görselleştirme kavram
 2. **ByteTrack algoritması**, tespit edilen araçlara benzersiz kimlik (ID) atayarak takip eder.  
 3. Her karedeki toplam araç sayısı ekrana yazılır.  
 4. Süre boyunca elde edilen araç sayısı değerleri kaydedilir ve **yoğunluk grafiği** oluşturulur.  
-5. İşlem tamamlandığında grafik gösterilir
+5. İşlem tamamlandığında grafik gösterilir.  
 
 ---
 
@@ -41,6 +41,7 @@ Proje, görüntü işleme, nesne takibi, veri analizi ve görselleştirme kavram
 
 ## 🧩 PROJE DİZİN YAPISI
 
+```
 project_root/
 ├── app.py                         # Ana çalıştırılabilir dosya
 ├── weights/
@@ -56,23 +57,43 @@ project_root/
 │   └── config.py                  # Model ve video yolu ayarları
 └── ultralytics/
     └── cfg/tracker/bytetrack.yaml # Takip algoritması yapılandırması
+```
+
+---
 
 ## 🚀 KURULUM VE ÇALIŞTIRMA ADIMLARI
 
 ### 1️⃣ Gerekli kütüphaneleri yükle:
 ```bash
 pip install ultralytics==8.0.196 opencv-python matplotlib numpy
+```
 
-🧠 PROJE ÖZELLİKLERİ
+### 2️⃣ Modeli ekle:
+Eğitilmiş YOLOv8 modelini `weights/best.pt` olarak yerleştir.
 
-🚘 Gerçek zamanlı nesne tespiti ve takibi
+### 3️⃣ Videoyu ekle:
+Analiz etmek istediğin videoyu `test_videos/` klasörüne koy (örnek: `cars.mp4`).
 
-🧮 Araç sınıflarının sayılması (yaya hariç)
+### 4️⃣ Uygulamayı çalıştır:
+```bash
+python app.py
+```
 
-📊 Zaman serisi tabanlı yoğunluk grafiği
+### 5️⃣ Sonuç:
+- Ekranda anlık **araç sayısı** gösterilir.  
+- Araç tespitleri kare üzerine çizilir.  
+- İşlem tamamlanınca **yoğunluk grafiği** açılır.  
+- İşlenen video `output/output_result.mp4` olarak kaydedilir.  
 
-🎥 Çıktı videosu ve otomatik demo GIF oluşturma
+---
 
-🖼️ Arka planı renkli sayaç yazısı (görünürlük için optimize)
+## 🧠 PROJE ÖZELLİKLERİ
 
-⚙️ Tamamen modüler yapı (src/ klasörü altında)
+- 🚘 Gerçek zamanlı nesne tespiti ve takibi  
+- 🧮 Araç sınıflarının sayılması (yaya hariç)  
+- 📊 Zaman serisi tabanlı yoğunluk grafiği  
+- 🎥 Çıktı videosu ve otomatik demo GIF oluşturma  
+- 🖼️ Arka planı renkli sayaç yazısı (görünürlük için optimize)  
+- ⚙️ Tamamen modüler yapı (`src/` klasörü altında)  
+
+---
