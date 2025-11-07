@@ -1,4 +1,6 @@
-# 🚗 GERÇEK ZAMANLI ARAÇ YOĞUNLUĞU ANALİZİ SİSTEMİ (YOLOv8 + ByteTrack)
+# YOLOv8-Detection-Tracking-Classification
+
+### 🚗 Gerçek Zamanlı Araç Tespiti, Takibi ve Yoğunluk Analizi Sistemi
 
 <p align="center">
   <img src="./output.gif" alt="Demo" width="800"/>
@@ -70,7 +72,7 @@ pip install ultralytics==8.0.196 opencv-python matplotlib numpy
 ```
 
 ### 2️⃣ Modeli ekle:
-Eğitilmiş YOLOv8 modelini `weights/best.pt` olarak yerleştir.
+Eğittiğin YOLOv8 modelini `weights/best.pt` olarak yerleştir.
 
 ### 3️⃣ Videoyu ekle:
 Analiz etmek istediğin videoyu `test_videos/` klasörüne koy (örnek: `cars.mp4`).
