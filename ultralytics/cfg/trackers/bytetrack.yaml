@@ -1,0 +1,19 @@
+
+tracker_type: bytetrack  
+
+
+track_high_thresh: 0.45     # yüksek güvenli tespitler (biraz düşürerek daha fazla nesne dahil edilir)
+track_low_thresh: 0.05      # düşük güvenli tespitler bile geçici olarak dikkate alınır
+new_track_thresh: 0.6       # yeni ID oluşturma eşiği
+
+
+track_buffer: 90           
+match_thresh: 0.8         
+
+
+frame_rate: 30             
+mot20: False
+fuse_score: True
+
+#Görselleştirme ve ölçüm
+enable_mot_metrics: False
