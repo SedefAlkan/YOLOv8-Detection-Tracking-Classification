@@ -1,16 +1,23 @@
 import cv2
 
-def draw_text(frame, text, position=(20, 50), color=(0, 255, 0), size=1.2):
-   
-    cv2.putText(
-        frame,
-        text,
-        position,
-        cv2.FONT_HERSHEY_SIMPLEX,
-        size,
-        color,
-        2
-    )
+def draw_text(frame, text, position=(20, 50), text_color=(0, 255, 0), font_scale=1.2, thickness=2):
+
+    (text_w, text_h), _ = cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX, font_scale, thickness)
+    x, y = position
+    cv2.rectangle(frame,
+                  (x - 10, y - text_h - 10),
+                  (x + text_w + 10, y + 10),
+                  (0, 0, 0),  
+                  -1)        
+    cv2.putText(frame,
+                text,
+                position,
+                cv2.FONT_HERSHEY_SIMPLEX,
+                font_scale,
+                text_color,
+                thickness,
+                cv2.LINE_AA)
+
 
 def apply_roi_mask(frame, roi=None):
   
